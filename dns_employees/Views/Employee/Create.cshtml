@@ -1,0 +1,9 @@
+﻿@model dns_employees.Models.Employee;
+
+@{ Layout = null; }
+
+@await Html.PartialAsync("_form", Model)
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

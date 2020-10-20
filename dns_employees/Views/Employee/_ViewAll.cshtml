@@ -1,0 +1,38 @@
+﻿@model IEnumerable<dns_employees.Models.Employee>
+
+<h1 class="text-center"><i class="fas fa-users text-success"></i>Employees list</h1>
+
+<table class="table">
+    <thead class="thead-light">
+        <tr>
+            <th>@Html.DisplayNameFor(m => m.Name)</th>
+            <th>@Html.DisplayNameFor(m => m.Department)</th>
+            <th>@Html.DisplayNameFor(m => m.Title)</th>
+            <th>@Html.DisplayNameFor(m => m.ManagerName)</th>
+            <th>@Html.DisplayNameFor(m => m.Hire_date)</th>
+            <th>
+                <a onclick="showInPopup('@Url.Action("Create","Employee",null,Context.Request.Scheme)','New Employee')" class="btn btn-success text-white"><i class="fas fa-user"></i> New Employee</a>
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Department</td>
+                <td>@item.Title</td>
+                <td>@item.Manager.Name</td>
+                <td>@item.Hire_date</td>
+                <td>
+                    <div>
+                        <a onclick="showInPopup('@Url.Action("Edit","Employee",new {id=item.id},Context.Request.Scheme)','Update Employee')" class="btn btn-info text-white"><i class="fas fa-pencil-alt"></i> Edit</a>
+                        <form asp-action="Delete" asp-route-id="@item.id" onsubmit="return jQueryAjaxDelete(this)" class="d-inline">
+                            <input type="submit" value="Delete" class="btn btn-danger" />
+                        </form>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

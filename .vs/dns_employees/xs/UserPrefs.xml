@@ -1,0 +1,46 @@
+﻿<Properties StartupConfiguration="{79769C7B-B48B-428D-9BE1-1B51542FDF93}|Default">
+  <MonoDevelop.Ide.ItemProperties.dns__employees PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="dns_employees/Repository/MockEmployee.cs">
+    <Files>
+      <File FileName="dns_employees/appsettings.json" Line="12" Column="4" />
+      <File FileName="dns_employees/Models/Employee.cs" />
+      <File FileName="dns_employees/preparing_data.sql" />
+      <File FileName="dns_employees/Repository/MockEmployee.cs" Line="146" Column="80" />
+      <File FileName="dns_employees/Controllers/EmployeeController.cs" />
+      <File FileName="dns_employees/Models/ErrorViewModel.cs" />
+      <File FileName="dns_employees/Repository/FileLogger.cs" />
+      <File FileName="dns_employees/Repository/FileLoggerExtensions.cs" />
+      <File FileName="dns_employees/Repository/FileLoggerProvider.cs" />
+      <File FileName="dns_employees/Repository/IEmployee.cs" />
+      <File FileName="dns_employees/Startup.cs" />
+      <File FileName="dns_employees/Program.cs" />
+      <File FileName="dns_employees/logger.txt" />
+      <File FileName="dns_employees/Views/Shared/_Layout.cshtml" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="dns_employees" expanded="True">
+            <Node name="dns_employees" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Repository" expanded="True">
+                <Node name="IEmployee.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
